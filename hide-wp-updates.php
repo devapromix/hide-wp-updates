@@ -1,10 +1,11 @@
 <?php
 /**
- * Plugin Name: HideWPUpd: Прихувати оновлення
- * Plugin URI: http://wordpress.org/plugins/hello-dolly/
+ * Plugin Name: Hide WP Updates: Приховати оновлення
+ * Plugin URI: https://github.com/devapromix/hide-wp-updates
  * Description: Приховує повідомлення та індикатори про оновлення WordPress, плагінів, тем і перекладів до нової версії та вимикає автоматичні оновлення.
  * Version: 1.0.0
  * Author: APROMIX
+ * Author URI: https://github.com/devapromix
  */
 
 if ( ! defined( 'ABSPATH' ) ) exit;
