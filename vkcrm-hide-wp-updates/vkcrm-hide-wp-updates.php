@@ -37,3 +37,20 @@ add_action( 'admin_head', function() {
         }
     </style>';
 }, 999 );
+
+
+// Приховуємо повідомлення WordPress про рекомендоване оновлення PHP.
+add_action( 'wp_dashboard_setup', function() {
+    remove_meta_box( 'dashboard_php_nag', 'dashboard', 'normal' );
+} );
+
+// Додатково приховуємо PHP update notice в адмінці.
+add_action( 'admin_head', function() {
+    echo '<style>
+        .notice.php-update-nag,
+        .php-update-nag,
+        #dashboard_php_nag {
+            display: none !important;
+        }
+    </style>';
+}, 999 );
